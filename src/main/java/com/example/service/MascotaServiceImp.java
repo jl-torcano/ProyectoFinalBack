@@ -45,5 +45,10 @@ public class MascotaServiceImp implements MascotaService{
         }
         return m;
     }
+
+    @Override
+    public List<Mascota> listadoMascotasVendidas(int estado) {
+        return repositorio.findByVendida(estado);
+    }
     
 }

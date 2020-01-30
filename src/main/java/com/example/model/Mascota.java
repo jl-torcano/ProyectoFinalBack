@@ -27,6 +27,28 @@ public class Mascota {
     
     @Column
     private int vendida;
+    
+    @Column
+    private String amo;
+        
+    @Column
+    private String vendedor;
+
+    public String getAmo() {
+        return amo;
+    }
+
+    public void setAmo(String amo) {
+        this.amo = amo;
+    }
+
+    public String getVendedor() {
+        return vendedor;
+    }
+
+    public void setVendedor(String vendedor) {
+        this.vendedor = vendedor;
+    }
 
     public int getVendida() {
         return vendida;
